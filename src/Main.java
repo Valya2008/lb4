@@ -13,7 +13,7 @@ public class Main {
         Random rand = new Random();
 
         for (int i = 0; i < rows; i++) {
-            stringArray[i] = generateRandomString(10, rand); // 10 - длина строки
+            stringArray[i] = generateRandomString(10, rand); 
         }
 
         System.out.println("Исходный массив строк:");
@@ -21,8 +21,8 @@ public class Main {
 
         for (int i = 0; i < rows; i++) {
             char[] charArray = stringArray[i].toCharArray();
-            combSort(charArray); // Используем Comb Sort
-            stringArray[i] = new String(charArray); // Сохраняем отсортированную строку
+            combSort(charArray);
+            stringArray[i] = new String(charArray); 
         }
 
         System.out.println("Отсортированный массив строк:");
